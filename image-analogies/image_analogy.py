@@ -1,24 +1,3 @@
-'''Neural Image Analogies with Keras
-
-Before running this script, download the weights for the VGG16 model at:
-https://drive.google.com/file/d/0Bz7KyqmuGsilT0J5dmRCM0ROVHc/view?usp=sharing
-(source: https://gist.github.com/baraldilorenzo/07d7802847aaad0a35d3)
-and make sure the variable `weights_path` in this script matches the location of the file.
-
-This is adapted from the Keras "neural style transfer" example code.
-
-Run the script with:
-```
-python image_analogy.py path_to_your_ap_image_mask.jpg path_to_your_reference.jpg path_to_b prefix_for_results
-```
-e.g.:
-```
-python image_analogy.py images/arch-mask.jpg images/arch.jpg images/arch-newmask.jpg
-```
-
-It is preferrable to run this script on GPU, for speed.
-'''
-
 from __future__ import print_function
 import argparse
 import time
