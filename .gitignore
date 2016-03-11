@@ -1,3 +1,10 @@
 # Created by .ignore support plugin (hsz.mobi)
 *.pyc
 *.log
+connect.sh
+*.DS_Store
+*.swp
+image-analogies/out/*.jpg
+image-analogies/out/*.png
+image-analogies/vgg16_weights.h5
+venv
