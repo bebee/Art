@@ -46,7 +46,6 @@ def setup():
     sudo("pip install --upgrade jupyter")
     sudo("apt-get install -y libblas-dev liblapack-dev libatlas-base-dev gfortran")
     sudo("pip install --upgrade nearpy")
-    sudo
 
 @task
 def process():
@@ -54,3 +53,5 @@ def process():
         run("THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32 python image_analogy.py images/arch-mask.jpg images/arch.jpg images/arch-newmask.jpg out/arch")
         # export LD_LIBRARY_PATH=/home/ubuntu/torch-distro/install/lib:/home/ubuntu/torch-distro/install/lib:/home/ubuntu/cudnn-6.5-linux-x64-v2-rc2
         # th neural_style.lua -num_iterations 2000 -style_image groening.jpg -content_image toni.jpg -image_size 400 -backend cudnn -output_image jf.png
+    with cd("neural-doodle"):
+        run("python3 doodle.py --style samples/Renoir.jpg --output samples/Landscape.png    --device=gpu0 --iterations=80")

@@ -1,3 +1,6 @@
+/neural-doodle/data.pickle.gz
+/neural-doodle/data.pickle
+/neural-doodle/vgg19_conv.pkl.bz2
 *.pyc
 *.log
 connect.sh
