@@ -1,8 +1,11 @@
 Neural Doodle (Python 2 version)
 =============
 
-https://www.dropbox.com/s/sa94i9dwaq3yah2/data.pickle.gz?dl=0 (Modified picle for python 2 decompress before use)
---------------------------------
+(Modified pickle for python 2, decompress before use)
+-----------
+https://www.dropbox.com/s/sa94i9dwaq3yah2/data.pickle.gz?dl=0
+
+
 
 .. image:: docs/Workflow.gif
     :align: right
